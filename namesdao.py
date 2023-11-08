@@ -245,8 +245,7 @@ def cmd_resolve():
         print('Please provide a name')
         display_help()
         return
-    address = resolve(name)
-    if address:
+    if address := resolve(name):
         print(address)
 
 # Used to point to the method to process the command
